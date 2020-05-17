@@ -10,6 +10,7 @@
     <RepositoryUrl>https://github.com/MintPlayer/MintPlayer.Pagination</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>.NET Standard, Pagination</PackageTags>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
