@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <Description>Helper library for pagination</Description>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/MintPlayer/MintPlayer.Pagination</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MintPlayer/MintPlayer.Pagination</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>.NET Standard, Pagination</PackageTags>
+  </PropertyGroup>
+
+</Project>
