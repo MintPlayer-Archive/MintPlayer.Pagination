@@ -5,11 +5,11 @@ namespace MintPlayer.Pagination.Extensions
 {
     public static class IQueryableExtensions
     {
-        internal static IOrderedQueryable<TSource> OrderBy<TSource>(this IQueryable<TSource> query, string propertyName)
+        public static IOrderedQueryable<TSource> OrderBy<TSource>(this IQueryable<TSource> query, string propertyName)
         {
             return query.OrderByBase(propertyName, true);
         }
-        internal static IOrderedQueryable<TSource> OrderByDescending<TSource>(this IQueryable<TSource> query, string propertyName)
+        public static IOrderedQueryable<TSource> OrderByDescending<TSource>(this IQueryable<TSource> query, string propertyName)
         {
             return query.OrderByBase(propertyName, false);
         }
