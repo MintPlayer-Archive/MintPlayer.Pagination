@@ -24,18 +24,18 @@ jobs:
         node-version: 14
 
     - name: Install dependencies
-      run: npm install
+      run: cd angular/mintplayer-ng-pagination && npm install
     
     - name: Build
-      run: npm run build -- --prod
+      run: npm run build --prefix angular/mintplayer-ng-pagination -- --prod
 
     - name: Test
-      run: npm run test-headless
+      run: npm run test-headless --prefix angular/mintplayer-ng-pagination
     
     - name: Push to NPM
       uses: JS-DevTools/npm-publish@v1
       with:
-        package: 'dist/mintplayer/ng-pagination/package.json'
+        package: 'angular/mintplayer-ng-pagination/dist/mintplayer/ng-pagination/package.json'
         registry: 'https://registry.npmjs.org'
         token: ${{ secrets.PUBLISH_NODE_TO_NPMJS_COM }}
         access: 'public'
@@ -43,7 +43,7 @@ jobs:
     - name: Push to Github
       uses: JS-DevTools/npm-publish@v1
       with:
-        package: 'dist/mintplayer/ng-pagination/package.json'
+        package: 'angular/mintplayer-ng-pagination/dist/mintplayer/ng-pagination/package.json'
         registry: 'https://npm.pkg.github.com'
         token: ${{ github.token }}
         access: 'public'
