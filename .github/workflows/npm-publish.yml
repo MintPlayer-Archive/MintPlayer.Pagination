@@ -27,7 +27,7 @@ jobs:
       run: cd angular/mintplayer-ng-pagination && npm install
     
     - name: Build
-      run: npm run build --prefix angular/mintplayer-ng-pagination -- --prod
+      run: npm run build --prefix angular/mintplayer-ng-pagination -- --configuration production
 
     #- name: Test
     #  run: npm run test-headless --prefix angular/mintplayer-ng-pagination
