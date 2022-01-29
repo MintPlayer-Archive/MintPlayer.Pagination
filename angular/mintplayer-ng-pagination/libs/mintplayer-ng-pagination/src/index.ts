@@ -1,1 +1,1 @@
-export * from './lib/mintplayer-ng-pagination.module';
+export * from './lib/interfaces';
