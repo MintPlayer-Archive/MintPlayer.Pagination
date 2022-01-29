@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/mintplayer-ng-pagination",
+  "sourceRoot": "libs/mintplayer-ng-pagination/src",
+  "prefix": "mintplayer-ng-pagination",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/mintplayer-ng-pagination"],
+      "options": {
+        "project": "libs/mintplayer-ng-pagination/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/mintplayer-ng-pagination/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/mintplayer-ng-pagination/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/mintplayer-ng-pagination"],
+      "options": {
+        "jestConfig": "libs/mintplayer-ng-pagination/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/mintplayer-ng-pagination/src/**/*.ts",
+          "libs/mintplayer-ng-pagination/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

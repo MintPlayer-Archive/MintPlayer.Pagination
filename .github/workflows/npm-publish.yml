@@ -29,8 +29,8 @@ jobs:
     - name: Build
       run: npm run build --prefix angular/mintplayer-ng-pagination -- --configuration production
 
-    #- name: Test
-    #  run: npm run test-headless --prefix angular/mintplayer-ng-pagination
+    - name: Test
+      run: npm run nx run-many --prefix=angular/mintplayer-ng-pagination -- --target=test --projects=ng-pagination-demo --watch=false --browsers=ChromeHeadless
     
     - name: Push to NPM
       uses: JS-DevTools/npm-publish@v1

@@ -1,0 +1,16 @@
+{
+  "name": "@mintplayer/ng-pagination",
+  "private": false,
+  "version": "13.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MintPlayer/MintPlayer.Pagination"
+  },
+  "peerDependencies": {
+    "@angular/common": "^13.2.0",
+    "@angular/core": "^13.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
