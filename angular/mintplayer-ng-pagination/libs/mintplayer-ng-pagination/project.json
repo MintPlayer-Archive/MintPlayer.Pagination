@@ -1,6 +1,6 @@
 {
+  "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "projectType": "library",
-  "root": "libs/mintplayer-ng-pagination",
   "sourceRoot": "libs/mintplayer-ng-pagination/src",
   "prefix": "mintplayer-ng-pagination",
   "targets": {
@@ -24,7 +24,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/mintplayer-ng-pagination"],
       "options": {
-        "jestConfig": "libs/mintplayer-ng-pagination/jest.config.js",
+        "jestConfig": "libs/mintplayer-ng-pagination/jest.config.ts",
         "passWithNoTests": true
       }
     },

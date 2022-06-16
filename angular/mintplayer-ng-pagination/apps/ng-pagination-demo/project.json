@@ -1,6 +1,6 @@
 {
+  "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
   "projectType": "application",
-  "root": "apps/ng-pagination-demo",
   "sourceRoot": "apps/ng-pagination-demo/src",
   "prefix": "mintplayer-ng-pagination",
   "targets": {
@@ -85,7 +85,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/ng-pagination-demo"],
       "options": {
-        "jestConfig": "apps/ng-pagination-demo/jest.config.js",
+        "jestConfig": "apps/ng-pagination-demo/jest.config.ts",
         "passWithNoTests": true
       }
     }
