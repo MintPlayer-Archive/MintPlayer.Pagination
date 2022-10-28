@@ -1,4 +1,4 @@
-name: build-any
+name: dotnet-build-any
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 jobs:
   build:
 
-    name: build-any
+    name: dotnet-build-any
     runs-on: ubuntu-latest
 
     permissions: 
@@ -30,13 +30,13 @@ jobs:
         NUGET_AUTH_TOKEN: '%NUGET_AUTH_TOKEN%'
     
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore dotnet
       env:
         NUGET_AUTH_TOKEN: ${{ github.token }}
         
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build --configuration Release --no-restore dotnet
       
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
-      
+      run: dotnet test --no-restore --verbosity normal dotnet
+    

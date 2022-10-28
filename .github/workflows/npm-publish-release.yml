@@ -1,4 +1,4 @@
-name: npm-publish
+name: npm-publish-release
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   build:
   
-    name: npm-publish
+    name: npm-publish-release
     runs-on: ubuntu-latest
     
     permissions: 
