@@ -24,7 +24,7 @@ jobs:
         NUGET_AUTH_TOKEN: '%NUGET_AUTH_TOKEN%'
     
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore dotnet
       env:
         NUGET_AUTH_TOKEN: ${{ github.token }}
         
