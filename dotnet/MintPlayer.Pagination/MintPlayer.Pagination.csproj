@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
@@ -13,7 +13,7 @@
 		<RepositoryUrl>https://github.com/MintPlayer/MintPlayer.Pagination</RepositoryUrl>
 		<RepositoryType>Git</RepositoryType>
 		<PackageTags>.NET Standard, Pagination</PackageTags>
-		<Version>6.0.1</Version>
+		<Version>7.0.0-preview1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
