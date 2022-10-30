@@ -1,4 +1,4 @@
-name: dotnet-pull-request
+name: pull-request
 
 on:
   pull_request:
@@ -7,13 +7,15 @@ on:
 jobs:
   build:
 
-    name: dotnet-pull-request
+    name: pull-request
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
       uses: actions/checkout@v2
       
+    # In a pull request we must make sure both the angular/dotnet library build.
+
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v2.1.0
       with:
@@ -34,3 +36,17 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal dotnet
       
+    - name: Setup node
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
+
+    - name: Install dependencies
+      run: cd angular/mintplayer-ng-pagination && npm install
+    
+    - name: Build
+      run: npm run nx run-many --prefix angular/mintplayer-ng-pagination -- --target=build --projects=ng-pagination-demo --configuration production
+
+    - name: Test
+      run: npm run nx run-many --prefix=angular/mintplayer-ng-pagination -- --target=test --projects=ng-pagination-demo --watch=false --browsers=ChromeHeadless
+    

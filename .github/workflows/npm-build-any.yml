@@ -1,14 +1,16 @@
-name: npm-publish-release
+name: npm-build-master
 
 on:
   push:
     branches:
-      - 'release/angular**'
+      - '**'
+      - '!master'
+      - '!release/**'
 
 jobs:
   build:
   
-    name: npm-publish-release
+    name: npm-build-master
     runs-on: ubuntu-latest
     
     permissions: 
@@ -33,18 +35,3 @@ jobs:
     - name: Test
       run: npm run nx run-many --prefix=angular/mintplayer-ng-pagination -- --target=test --projects=ng-pagination-demo --watch=false --browsers=ChromeHeadless
     
-    - name: Push to NPM
-      uses: JS-DevTools/npm-publish@v1
-      with:
-        package: 'angular/mintplayer-ng-pagination/dist/libs/mintplayer-ng-pagination/package.json'
-        registry: 'https://registry.npmjs.org'
-        token: ${{ secrets.PUBLISH_NODE_TO_NPMJS_COM }}
-        access: 'public'
-
-    - name: Push to Github
-      uses: JS-DevTools/npm-publish@v1
-      with:
-        package: 'angular/mintplayer-ng-pagination/dist/libs/mintplayer-ng-pagination/package.json'
-        registry: 'https://npm.pkg.github.com'
-        token: ${{ github.token }}
-        access: 'public'

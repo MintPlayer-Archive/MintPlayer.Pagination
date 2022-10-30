@@ -3,7 +3,7 @@ name: dotnet-publish-release
 on:
   push:
     branches:
-      - 'release/**'
+      - 'release/dotnet**'
 
 jobs:
   build:
