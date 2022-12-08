@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PaginationRequest, PaginationResponse } from '@mintplayer/ng-pagination';
+import { PaginationRequest, PaginationResponse } from '@mintplayer/pagination';
 import { Person } from './interfaces/person';
 
 @Component({
