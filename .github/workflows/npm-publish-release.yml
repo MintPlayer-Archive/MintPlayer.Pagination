@@ -3,7 +3,8 @@ name: npm-publish-release
 on:
   push:
     branches:
-      - 'release/angular**'
+      #- 'release/angular**'
+      - 'release/dotnet**'
 
 jobs:
   build:
@@ -36,7 +37,7 @@ jobs:
     - name: Push to NPM
       uses: JS-DevTools/npm-publish@v1
       with:
-        package: 'angular/mintplayer-ng-pagination/dist/libs/mintplayer-ng-pagination/package.json'
+        package: 'angular/mintplayer-ng-pagination/dist/libs/mintplayer-pagination/package.json'
         registry: 'https://registry.npmjs.org'
         token: ${{ secrets.PUBLISH_NODE_TO_NPMJS_COM }}
         access: 'public'
@@ -44,7 +45,7 @@ jobs:
     - name: Push to Github
       uses: JS-DevTools/npm-publish@v1
       with:
-        package: 'angular/mintplayer-ng-pagination/dist/libs/mintplayer-ng-pagination/package.json'
+        package: 'angular/mintplayer-ng-pagination/dist/libs/mintplayer-pagination/package.json'
         registry: 'https://npm.pkg.github.com'
         token: ${{ github.token }}
         access: 'public'
