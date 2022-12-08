@@ -15,9 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mintplayer/ng-pagination": [
-        "libs/mintplayer-ng-pagination/src/index.ts"
-      ]
+      "@mintplayer/pagination": ["libs/mintplayer-pagination/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
