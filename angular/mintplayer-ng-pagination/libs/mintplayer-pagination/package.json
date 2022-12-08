@@ -2,10 +2,23 @@
   "name": "@mintplayer/pagination",
   "private": false,
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "Pagination typescript library",
   "repository": {
     "type": "git",
     "url": "https://github.com/MintPlayer/MintPlayer.Pagination",
     "directory": "angular/mintplayer-ng-pagination/libs/mintplayer-pagination"
-  }
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "author": {
+    "name": "Pieterjan De Clippel",
+    "url": "https://github.com/MintPlayer",
+    "email": "info@mintplayer.com"
+  },
+  "keywords": [
+    "pagination",
+    "typescript"
+  ]
 }
