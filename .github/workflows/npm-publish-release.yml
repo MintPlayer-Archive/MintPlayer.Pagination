@@ -3,7 +3,8 @@ name: npm-publish-release
 on:
   push:
     branches:
-      - 'release/angular**'
+      #- 'release/angular**'
+      - 'release/dotnet**'
 
 jobs:
   build:
