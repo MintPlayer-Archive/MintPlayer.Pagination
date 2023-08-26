@@ -3,8 +3,8 @@ name: npm-publish-release
 on:
   push:
     branches:
-      #- 'release/angular**'
-      - 'release/dotnet**'
+      - 'release/angular**'
+      #- 'release/dotnet**'
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
     - name: Setup node
       uses: actions/setup-node@v2
       with:
-        node-version: 14
+        node-version: 16
 
     - name: Install dependencies
       run: cd angular/mintplayer-ng-pagination && npm install

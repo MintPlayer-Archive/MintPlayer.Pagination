@@ -1,8 +1,0 @@
-{
-  "version": 2,
-  "projects": {
-    "mintplayer-pagination": "libs/mintplayer-pagination",
-    "ng-pagination-demo": "apps/ng-pagination-demo",
-    "ng-pagination-demo-e2e": "apps/ng-pagination-demo-e2e"
-  }
-}
