@@ -23,17 +23,17 @@ These capabilities include generating applications, libraries, etc as well as th
 Below are our core plugins:
 
 - [Angular](https://angular.io)
-  - `ng add @nx/angular`
+    - `ng add @nx/angular`
 - [React](https://reactjs.org)
-  - `ng add @nrwl/react`
+    - `ng add @nrwl/react`
 - Web (no framework frontends)
-  - `ng add @nrwl/web`
+    - `ng add @nrwl/web`
 - [Nest](https://nestjs.com)
-  - `ng add @nrwl/nest`
+    - `ng add @nrwl/nest`
 - [Express](https://expressjs.com)
-  - `ng add @nrwl/express`
+    - `ng add @nrwl/express`
 - [Node](https://nodejs.org)
-  - `ng add @nrwl/node`
+    - `ng add @nrwl/node`
 
 There are also many [community plugins](https://nx.dev/community) you could add.
 
