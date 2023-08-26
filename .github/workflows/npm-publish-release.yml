@@ -35,7 +35,7 @@ jobs:
       run: npm run nx run-many --prefix=angular/mintplayer-ng-pagination -- --target=test --projects=ng-pagination-demo --watch=false --browsers=ChromeHeadless
     
     - name: Push to NPM
-      uses: JS-DevTools/npm-publish@v1
+      uses: JS-DevTools/npm-publish@v2
       with:
         package: 'angular/mintplayer-ng-pagination/dist/libs/mintplayer-pagination/package.json'
         registry: 'https://registry.npmjs.org'
@@ -43,7 +43,7 @@ jobs:
         access: 'public'
 
     - name: Push to Github
-      uses: JS-DevTools/npm-publish@v1
+      uses: JS-DevTools/npm-publish@v2
       with:
         package: 'angular/mintplayer-ng-pagination/dist/libs/mintplayer-pagination/package.json'
         registry: 'https://npm.pkg.github.com'
